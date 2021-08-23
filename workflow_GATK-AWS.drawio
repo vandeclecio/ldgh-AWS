@@ -1,0 +1,89 @@
+<mxfile host="app.diagrams.net" modified="2021-06-16T13:54:49.359Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36" etag="ZId93_EZ87-hqvyy9WUg" version="14.7.7" type="github">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1340" dy="805" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="JCo3osOA3Qmf99k1e3xK-1" value="S3" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="344" y="430" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JCo3osOA3Qmf99k1e3xK-2" value="EFS&lt;br&gt;database/" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="530" y="260" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JCo3osOA3Qmf99k1e3xK-3" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="600" y="230" width="20" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="JCo3osOA3Qmf99k1e3xK-10" value="" style="shape=flexArrow;endArrow=classic;startArrow=none;html=1;startFill=0;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="411" y="480" as="sourcePoint" />
+            <mxPoint x="497" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JCo3osOA3Qmf99k1e3xK-15" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;fillColor=#f5f5f5;strokeColor=#666666;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="559.5" y="450" as="sourcePoint" />
+            <mxPoint x="559.5" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JCo3osOA3Qmf99k1e3xK-16" value="EC2&lt;br&gt;pipeline GATK" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="497" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JCo3osOA3Qmf99k1e3xK-17" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;fasta&lt;/li&gt;&lt;li&gt;dbsnp&lt;/li&gt;&lt;li&gt;indels&lt;/li&gt;&lt;li&gt;hapmap&lt;/li&gt;&lt;li&gt;1000G&lt;/li&gt;&lt;li&gt;Omni&lt;/li&gt;&lt;li&gt;Samples&lt;/li&gt;&lt;li&gt;WorkDir&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="627" y="230" width="190" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="JCo3osOA3Qmf99k1e3xK-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;startArrow=none;startFill=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="JCo3osOA3Qmf99k1e3xK-18" target="JCo3osOA3Qmf99k1e3xK-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="374" y="255" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JCo3osOA3Qmf99k1e3xK-18" value="&lt;h1 style=&quot;text-align: center&quot;&gt;S3&lt;/h1&gt;&lt;p&gt;Sistema de armazenamento de arquivos. Usadoa apenas para Download/Upload de arquivos. Não é possível fazer leitura/escrita de processamento.&lt;/p&gt;&lt;p&gt;Poderia ser utilizado para armazenar amostrar sequenciadas brutas, não processadas.&lt;/p&gt;&lt;p&gt;Ou resultados finais de processamento, que precisem ser compartilhados com outros colaboradores.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="30" y="120" width="190" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="JCo3osOA3Qmf99k1e3xK-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;startArrow=none;startFill=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="JCo3osOA3Qmf99k1e3xK-19" target="JCo3osOA3Qmf99k1e3xK-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JCo3osOA3Qmf99k1e3xK-19" value="&lt;h1&gt;&lt;div style=&quot;text-align: center ; font-weight: 400&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 18px&quot;&gt;Comando para executar&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 12px ; font-weight: 400&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;i&gt;python3 GATK.py&amp;nbsp; -c&amp;nbsp; configuration -r reference&amp;nbsp; -f /media/LDGH_STORAGE/Vande/TestePipeline/ -p programs -j&lt;br&gt;&lt;br&gt;&lt;/i&gt;&lt;/li&gt;&lt;li&gt;&lt;i&gt;./runPipeline_GATK.sh&lt;/i&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="336.5" y="820" width="441" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="JCo3osOA3Qmf99k1e3xK-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;startArrow=none;startFill=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="JCo3osOA3Qmf99k1e3xK-20" target="JCo3osOA3Qmf99k1e3xK-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="553" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JCo3osOA3Qmf99k1e3xK-20" value="&lt;h1 style=&quot;text-align: center&quot;&gt;&lt;font style=&quot;font-size: 18px&quot;&gt;Pipeline Gatk-master&lt;/font&gt;&lt;/h1&gt;&lt;p&gt;Diretório: ~/GATK-master/&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;configuration&lt;/li&gt;&lt;li&gt;configuration2&lt;/li&gt;&lt;li&gt;GATK.py&lt;/li&gt;&lt;li&gt;programs&lt;/li&gt;&lt;li&gt;reference&lt;/li&gt;&lt;li&gt;steps&lt;/li&gt;&lt;li&gt;runPipeline_GATK.sh&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="452.5" y="600" width="210" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="JCo3osOA3Qmf99k1e3xK-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;startArrow=none;startFill=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="JCo3osOA3Qmf99k1e3xK-25" target="JCo3osOA3Qmf99k1e3xK-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JCo3osOA3Qmf99k1e3xK-25" value="&lt;h1 style=&quot;text-align: center&quot;&gt;EFS&lt;/h1&gt;&lt;p&gt;Diretório utilizado para armazenamento dos bancos de dados e processamento.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="307" y="110" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="JCo3osOA3Qmf99k1e3xK-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;startArrow=none;startFill=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="JCo3osOA3Qmf99k1e3xK-27" target="JCo3osOA3Qmf99k1e3xK-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JCo3osOA3Qmf99k1e3xK-27" value="&lt;h1&gt;&lt;p style=&quot;font-size: 12px ; font-weight: 400&quot;&gt;&lt;b&gt;Obs.: Qual o mais barato?&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 12px ; font-weight: 400&quot;&gt;&lt;b&gt;S3 ou NFS long time?&lt;/b&gt;&lt;/p&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="45" y="440" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="JCo3osOA3Qmf99k1e3xK-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;startArrow=none;startFill=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="JCo3osOA3Qmf99k1e3xK-34" target="JCo3osOA3Qmf99k1e3xK-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JCo3osOA3Qmf99k1e3xK-34" value="&lt;h1&gt;&lt;p style=&quot;font-size: 12px ; font-weight: 400&quot;&gt;&lt;b&gt;Qual sistema de arquivo mais eficiente para isso?&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 12px ; font-weight: 400&quot;&gt;&lt;b&gt;EFS, EFS longtime, outro?&lt;/b&gt;&lt;/p&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="319.5" y="10" width="165" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JCo3osOA3Qmf99k1e3xK-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;startArrow=none;startFill=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="JCo3osOA3Qmf99k1e3xK-36" target="JCo3osOA3Qmf99k1e3xK-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JCo3osOA3Qmf99k1e3xK-36" value="&lt;h1&gt;&lt;p style=&quot;font-size: 12px&quot;&gt;Daria para usar outros recursos da AWS?&lt;/p&gt;&lt;p style=&quot;font-size: 12px&quot;&gt;batch, lambyda, outro?&lt;/p&gt;&lt;p style=&quot;font-size: 12px&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="257.5" y="660" width="160" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
